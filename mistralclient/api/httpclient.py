@@ -191,10 +191,10 @@ class HTTPClient(object):
 
             headers[h_name] = self.target_project_domain_name
 
-        if self.target_service_catalog:
-            headers['X-Target-Service-Catalog'] = base64.b64encode(
-                self.target_service_catalog.encode('utf-8')
-            )
+        #if self.target_service_catalog:
+        #    headers['X-Target-Service-Catalog'] = base64.b64encode(
+        #        self.target_service_catalog.encode('utf-8')
+        #    )
 
         if osprofiler_web:
             # Add headers for osprofiler.
